@@ -965,8 +965,8 @@
             },
             "vertices": [
               {
-                "x": 1320,
-                "y": 370
+                "x": 1470,
+                "y": 400
               }
             ]
           },
@@ -1116,6 +1116,52 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "4d73956d-9fa8-464c-a755-31f13e91d4d7",
+            "source": {
+              "x": 1092,
+              "y": 90
+            },
+            "target": {
+              "x": 1190,
+              "y": 90
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "API request logowanie",
               "description": "",
               "outOfScope": false,
@@ -1134,13 +1180,19 @@
             ],
             "id": "5426ce64-66c8-4a3e-9a37-8bcf32927c05",
             "source": {
-              "x": 1460,
+              "x": 1480,
               "y": 90
             },
             "target": {
-              "x": 1430,
-              "y": 240
-            }
+              "cell": "cb91d01f-5371-4746-8bd4-dbc082c94e90",
+              "port": "038af311-23ea-46bc-8161-747dfc07d682"
+            },
+            "vertices": [
+              {
+                "x": 1480,
+                "y": 180
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1180,59 +1232,19 @@
             ],
             "id": "da849c2e-d498-4d70-8b37-76ac792fe71e",
             "source": {
-              "x": 1310,
-              "y": 80
+              "x": 1630,
+              "y": 90
             },
             "target": {
-              "x": 1300,
+              "x": 1640,
               "y": 290
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
+            },
+            "vertices": [
+              {
+                "x": 1630,
+                "y": 200
               }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "4d73956d-9fa8-464c-a755-31f13e91d4d7",
-            "source": {
-              "x": 1092,
-              "y": 90
-            },
-            "target": {
-              "x": 1190,
-              "y": 90
-            }
+            ]
           },
           {
             "position": {
@@ -1353,8 +1365,8 @@
           },
           {
             "position": {
-              "x": 1290,
-              "y": 10
+              "x": 1470,
+              "y": 20
             },
             "size": {
               "width": 180,
@@ -1473,8 +1485,8 @@
           },
           {
             "position": {
-              "x": 1300,
-              "y": 205
+              "x": 1470,
+              "y": 215
             },
             "size": {
               "width": 160,
@@ -1593,8 +1605,8 @@
           },
           {
             "position": {
-              "x": 1320,
-              "y": 435
+              "x": 1490,
+              "y": 465
             },
             "size": {
               "width": 120,
@@ -1735,11 +1747,11 @@
             ],
             "id": "2ea73139-8e03-46b7-9607-d088155745d9",
             "source": {
-              "x": 1240,
+              "x": 1280,
               "y": 30
             },
             "target": {
-              "x": 1240,
+              "x": 1280,
               "y": 380
             },
             "vertices": []
@@ -1765,6 +1777,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1848,7 +1861,6 @@
               ]
             },
             "id": "6c21ff2f-df0e-4606-8422-fc052e3cee45",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Przeglądarka WWW",
@@ -1862,13 +1874,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
