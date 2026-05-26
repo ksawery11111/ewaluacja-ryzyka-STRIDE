@@ -1091,6 +1091,11 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -1312,7 +1317,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "login response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1326,7 +1331,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "login response"
             ],
             "id": "8527f286-e6b2-4925-af88-f49c00e24a3e",
             "source": {
@@ -1339,8 +1344,16 @@
             },
             "vertices": [
               {
-                "x": 1380,
+                "x": 1430,
                 "y": 140
+              },
+              {
+                "x": 1400,
+                "y": 120
+              },
+              {
+                "x": 1380,
+                "y": 120
               }
             ]
           },
