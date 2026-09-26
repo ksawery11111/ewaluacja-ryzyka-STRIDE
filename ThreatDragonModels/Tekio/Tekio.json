@@ -21,6 +21,101 @@
         "cells": [
           {
             "position": {
+              "x": 326,
+              "y": 70
+            },
+            "size": {
+              "width": 680,
+              "height": 120
+            },
+            "attrs": {
+              "label": {
+                "text": "Użytkownicy (niższy poziom zaufania)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "220d1d1d-e1f5-4571-bc99-f34c3475eebc",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Użytkownicy (niższy poziom zaufania)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "a57d52c2-5061-469b-a8da-2c6c687026ff"
+              ],
+              "containedElements": [
+                "9efca053-cdde-4834-ae69-08e1bda85576",
+                "038b16b3-d855-4beb-92ec-8b09ba3f0553"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 951.25,
+              "y": 285
+            },
+            "size": {
+              "width": 170,
+              "height": 120
+            },
+            "attrs": {
+              "label": {
+                "text": "STRIPE (zewnętrzny system)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "9fb1756b-7ada-43cc-8c79-8052e3026bb5",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "STRIPE (zewnętrzny system)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "366f0dab-dbd4-4b94-a557-2155d7fcbe1c"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 294,
+              "y": 209.9999999999992
+            },
+            "size": {
+              "width": 630,
+              "height": 360
+            },
+            "attrs": {
+              "label": {
+                "text": "Shopify (granica zaufania)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "7aedf60b-04b5-4689-b5c6-e6d75ea7af91",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Shopify (granica zaufania)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "af4abb2f-1553-4501-a923-07c8d8e751f8",
+                "48ddee19-41dc-49d6-8cb1-06d52c493f73",
+                "de4d0c52-c07a-4168-88d3-a8903727dae2"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 400,
               "y": 100
             },
@@ -40,6 +135,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +219,6 @@
               ]
             },
             "id": "9efca053-cdde-4834-ae69-08e1bda85576",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Klient",
@@ -157,6 +252,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +336,6 @@
               ]
             },
             "id": "038b16b3-d855-4beb-92ec-8b09ba3f0553",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -264,7 +359,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Sklep Shopify"
+                "text": "Sklep internetowy Shopify"
               },
               "body": {
                 "stroke": "#333333",
@@ -274,6 +369,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -357,10 +453,9 @@
               ]
             },
             "id": "31bda91c-4efe-4290-bc66-775674494187",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
-              "name": "Sklep Shopify",
+              "name": "Sklep internetowy Shopify",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -384,7 +479,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Dostarczenie produktu przez Shopify"
+                "text": "Realizacja zamówienia cyfrowego poprzez Shopify"
               },
               "body": {
                 "stroke": "#333333",
@@ -394,6 +489,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -477,10 +573,9 @@
               ]
             },
             "id": "af4abb2f-1553-4501-a923-07c8d8e751f8",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
-              "name": "Dostarczenie produktu przez Shopify",
+              "name": "Realizacja zamówienia cyfrowego poprzez Shopify",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -514,6 +609,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -597,7 +693,6 @@
               ]
             },
             "id": "366f0dab-dbd4-4b94-a557-2155d7fcbe1c",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "STRIPE",
@@ -612,7 +707,7 @@
           },
           {
             "position": {
-              "x": 290,
+              "x": 396.25,
               "y": 500
             },
             "size": {
@@ -634,6 +729,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -717,7 +813,6 @@
               ]
             },
             "id": "48ddee19-41dc-49d6-8cb1-06d52c493f73",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "Dane klientów i zamówień",
@@ -736,7 +831,7 @@
           },
           {
             "position": {
-              "x": 482,
+              "x": 692,
               "y": 500
             },
             "size": {
@@ -758,6 +853,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -841,7 +937,6 @@
               ]
             },
             "id": "de4d0c52-c07a-4168-88d3-a8903727dae2",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "Pliki fontów",
@@ -857,6 +952,110 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "przeglądanie sklepu",
+              "description": "logowanie, koszyk, zamówienie",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "przeglądanie sklepu"
+            ],
+            "id": "3d54fcf9-9f71-4f64-8a6d-93b220e18a1a",
+            "source": {
+              "x": 396,
+              "y": 160
+            },
+            "target": {
+              "x": 380,
+              "y": 270
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Strony sklepu",
+              "description": "informacje o produktach, status zamówienia",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "220d1d1d-e1f5-4571-bc99-f34c3475eebc"
+              ]
+            },
+            "labels": [
+              "Strony sklepu"
+            ],
+            "id": "a57d52c2-5061-469b-a8da-2c6c687026ff",
+            "source": {
+              "x": 534,
+              "y": 280
+            },
+            "target": {
+              "cell": "9efca053-cdde-4834-ae69-08e1bda85576",
+              "port": "2744a42e-2647-4142-9adb-fdd1bdef4325"
+            },
+            "vertices": [
+              {
+                "x": 570,
+                "y": 220
+              },
+              {
+                "x": 570,
+                "y": 200
+              }
+            ]
           }
         ]
       }
