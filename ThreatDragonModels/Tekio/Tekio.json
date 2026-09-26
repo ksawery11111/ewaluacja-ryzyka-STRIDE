@@ -106,7 +106,10 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "05e95de8-df38-4deb-97c5-46122aaaeb54",
+                "14a730dc-fd9c-4ca7-9142-a8ff4a9adba1"
+              ],
               "containedElements": [
                 "af4abb2f-1553-4501-a923-07c8d8e751f8",
                 "48ddee19-41dc-49d6-8cb1-06d52c493f73",
@@ -1056,6 +1059,108 @@
                 "y": 200
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Zapis danych klienta i zamówienia",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7aedf60b-04b5-4689-b5c6-e6d75ea7af91"
+              ]
+            },
+            "labels": [
+              "Zapis danych klienta i zamówienia"
+            ],
+            "id": "05e95de8-df38-4deb-97c5-46122aaaeb54",
+            "source": {
+              "x": 396,
+              "y": 440
+            },
+            "target": {
+              "cell": "48ddee19-41dc-49d6-8cb1-06d52c493f73",
+              "port": "e8f1a393-2b48-4afa-a777-6eb35e800b0d"
+            },
+            "vertices": [
+              {
+                "x": 396,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pobranie właściwego pliku fontów",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7aedf60b-04b5-4689-b5c6-e6d75ea7af91"
+              ]
+            },
+            "labels": [
+              "Pobranie właściwego pliku fontów"
+            ],
+            "id": "14a730dc-fd9c-4ca7-9142-a8ff4a9adba1",
+            "source": {
+              "x": 712,
+              "y": 400
+            },
+            "target": {
+              "cell": "de4d0c52-c07a-4168-88d3-a8903727dae2",
+              "port": "e8f1a393-2b48-4afa-a777-6eb35e800b0d"
+            }
           }
         ]
       }
