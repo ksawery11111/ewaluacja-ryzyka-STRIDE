@@ -77,7 +77,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "a8c0c922-d881-4bbe-aff9-e939129940b7"
+                "a8c0c922-d881-4bbe-aff9-e939129940b7",
+                "69669bdc-47f9-4abf-b627-4cced88afe77"
               ],
               "containedElements": [
                 "366f0dab-dbd4-4b94-a557-2155d7fcbe1c"
@@ -111,7 +112,8 @@
               "crossingFlows": [
                 "05e95de8-df38-4deb-97c5-46122aaaeb54",
                 "14a730dc-fd9c-4ca7-9142-a8ff4a9adba1",
-                "12b50596-ef2a-4ec9-991e-cad1419b5974"
+                "12b50596-ef2a-4ec9-991e-cad1419b5974",
+                "730fa3dd-ce1a-4541-9eb0-49e1a7b969d3"
               ],
               "containedElements": [
                 "af4abb2f-1553-4501-a923-07c8d8e751f8",
@@ -1267,6 +1269,108 @@
               "port": "848852a6-d664-46e7-a46d-bfefc59a0333"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Zarządzanie płatnościami",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "9fb1756b-7ada-43cc-8c79-8052e3026bb5"
+              ]
+            },
+            "labels": [
+              "Zarządzanie płatnościami"
+            ],
+            "id": "69669bdc-47f9-4abf-b627-4cced88afe77",
+            "source": {
+              "x": 922,
+              "y": 130
+            },
+            "target": {
+              "cell": "366f0dab-dbd4-4b94-a557-2155d7fcbe1c",
+              "port": "cf20a3eb-ccc6-4171-a5f6-6ce99ecb679a"
+            },
+            "vertices": [
+              {
+                "x": 1036,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7aedf60b-04b5-4689-b5c6-e6d75ea7af91"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "730fa3dd-ce1a-4541-9eb0-49e1a7b969d3",
+            "source": {
+              "x": 805,
+              "y": 160
+            },
+            "target": {
+              "cell": "af4abb2f-1553-4501-a923-07c8d8e751f8",
+              "port": "c42bf076-c2b7-4bbf-9e81-e749569a38ce"
+            }
           }
         ]
       }
