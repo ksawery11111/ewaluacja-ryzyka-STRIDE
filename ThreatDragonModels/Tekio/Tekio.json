@@ -113,7 +113,7 @@
                 "05e95de8-df38-4deb-97c5-46122aaaeb54",
                 "14a730dc-fd9c-4ca7-9142-a8ff4a9adba1",
                 "12b50596-ef2a-4ec9-991e-cad1419b5974",
-                "730fa3dd-ce1a-4541-9eb0-49e1a7b969d3"
+                "3bdf630f-c882-48b2-9219-7ddbafe3ed71"
               ],
               "containedElements": [
                 "af4abb2f-1553-4501-a923-07c8d8e751f8",
@@ -1344,7 +1344,59 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Zarządzanie sklepem",
+              "description": "produktami, zamówieniami, danymi klientów",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Zarządzanie sklepem"
+            ],
+            "id": "31bd4bf9-4e2a-4ff3-924e-0782f25ddef2",
+            "source": {
+              "x": 810,
+              "y": 160
+            },
+            "target": {
+              "x": 540,
+              "y": 280
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Informacja o opłacony zamówieniu",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1360,12 +1412,12 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Informacja o opłacony zamówieniu"
             ],
-            "id": "730fa3dd-ce1a-4541-9eb0-49e1a7b969d3",
+            "id": "3bdf630f-c882-48b2-9219-7ddbafe3ed71",
             "source": {
-              "x": 805,
-              "y": 160
+              "x": 555,
+              "y": 315
             },
             "target": {
               "cell": "af4abb2f-1553-4501-a923-07c8d8e751f8",
