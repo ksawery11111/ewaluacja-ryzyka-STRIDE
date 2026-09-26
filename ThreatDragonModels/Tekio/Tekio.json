@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "220d1d1d-e1f5-4571-bc99-f34c3475eebc",
             "zIndex": -1,
+            "id": "220d1d1d-e1f5-4571-bc99-f34c3475eebc",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Użytkownicy (niższy poziom zaufania)",
@@ -68,15 +68,17 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "9fb1756b-7ada-43cc-8c79-8052e3026bb5",
             "zIndex": -1,
+            "id": "9fb1756b-7ada-43cc-8c79-8052e3026bb5",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "STRIPE (zewnętrzny system)",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "a8c0c922-d881-4bbe-aff9-e939129940b7"
+              ],
               "containedElements": [
                 "366f0dab-dbd4-4b94-a557-2155d7fcbe1c"
               ]
@@ -84,8 +86,8 @@
           },
           {
             "position": {
-              "x": 294,
-              "y": 209.9999999999992
+              "x": 300,
+              "y": 210
             },
             "size": {
               "width": 630,
@@ -98,8 +100,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "7aedf60b-04b5-4689-b5c6-e6d75ea7af91",
             "zIndex": -1,
+            "id": "7aedf60b-04b5-4689-b5c6-e6d75ea7af91",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Shopify (granica zaufania)",
@@ -1160,6 +1162,54 @@
             "target": {
               "cell": "de4d0c52-c07a-4168-88d3-a8903727dae2",
               "port": "e8f1a393-2b48-4afa-a777-6eb35e800b0d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Żądanie płatności/transakcji",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "9fb1756b-7ada-43cc-8c79-8052e3026bb5"
+              ]
+            },
+            "labels": [
+              "Żądanie płatności/transakcji"
+            ],
+            "id": "a8c0c922-d881-4bbe-aff9-e939129940b7",
+            "source": {
+              "x": 810,
+              "y": 303
+            },
+            "target": {
+              "cell": "366f0dab-dbd4-4b94-a557-2155d7fcbe1c",
+              "port": "ca1adad2-21da-4e1d-ba97-fec3771ad153"
             }
           }
         ]
