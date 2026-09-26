@@ -110,7 +110,8 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "05e95de8-df38-4deb-97c5-46122aaaeb54",
-                "14a730dc-fd9c-4ca7-9142-a8ff4a9adba1"
+                "14a730dc-fd9c-4ca7-9142-a8ff4a9adba1",
+                "12b50596-ef2a-4ec9-991e-cad1419b5974"
               ],
               "containedElements": [
                 "af4abb2f-1553-4501-a923-07c8d8e751f8",
@@ -1210,7 +1211,62 @@
             "target": {
               "cell": "366f0dab-dbd4-4b94-a557-2155d7fcbe1c",
               "port": "ca1adad2-21da-4e1d-ba97-fec3771ad153"
-            }
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 303
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Potwierdzenie/status płatności",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7aedf60b-04b5-4689-b5c6-e6d75ea7af91"
+              ]
+            },
+            "labels": [
+              "Potwierdzenie/status płatności"
+            ],
+            "id": "12b50596-ef2a-4ec9-991e-cad1419b5974",
+            "source": {
+              "x": 976,
+              "y": 360
+            },
+            "target": {
+              "cell": "af4abb2f-1553-4501-a923-07c8d8e751f8",
+              "port": "848852a6-d664-46e7-a46d-bfefc59a0333"
+            },
+            "vertices": []
           }
         ]
       }
